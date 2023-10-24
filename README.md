@@ -6,7 +6,7 @@ Press b to skip Youtube ads. Also useful for in-video sponsored content; pressin
 To install: \
 -Follow the instructions here: https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked
 
-To use:
+To use: \
 -Press the 'b' key on your keyboard when an ad pops up \
 -For in-video ads, press b when they start to speed up and b when they stop to slow back down \
 
