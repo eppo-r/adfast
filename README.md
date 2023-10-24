@@ -11,7 +11,8 @@ To use: \
 -For in-video ads, press b when they start to speed up and b when they stop to slow back down
 
 
-This is meant to be as simple as possible to encourage trust and hacking. All of the code is in a single, 42 line JS file. \
+This is meant to be as simple as possible to encourage trust and hacking. All of the code is in a single, 42 line JS file.
+
 
 Some possible areas to improve:\n
 -Auto-sensing ads to eliminate the requirement for key presses (YouTube has made this much harder than in the past) \
