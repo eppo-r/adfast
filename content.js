@@ -17,7 +17,7 @@ document.addEventListener("keydown", function(event) {
 
     // Start new interval to poll for "Skip Ad" button
     intervalID = setInterval(() => {
-      const skipButton = document.querySelector(".ytp-ad-skip-button");
+      const skipButton = document.querySelector("button.ytp-ad-skip-button-modern.ytp-button");
       console.log("Skip button:", skipButton);
 
       if (skipButton) {
