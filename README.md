@@ -8,7 +8,7 @@ To install: \
 
 To use: \
 -Press the 'b' key on your keyboard when an ad pops up \
--For in-video ads, press b when they start to speed up and b when they stop to slow back down
+-For in-video ads or any other content within the video you'd like to move quickly though, press b to toggle 10x speed.
 
 
 This is meant to be as simple as possible to encourage trust and hacking. All of the code is in a single, 42 line JS file.
