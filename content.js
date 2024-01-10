@@ -4,13 +4,13 @@ let intervalID;
 document.addEventListener("keydown", function(event) {
   if (event.key === "b") {
     const video = document.querySelector("video");
-    console.log("Initial video:", video);
+    //console.log("Initial video:", video);
     if (!video) return;
 
     // Toggle speed
     video.playbackRate = speedToggled ? 1.0 : 10;
     speedToggled = !speedToggled;
-    console.log("Speed toggled to:", video.playbackRate);
+    //console.log("Speed toggled to:", video.playbackRate);
 
     // Clear previous interval, if any
     clearInterval(intervalID);
@@ -18,7 +18,7 @@ document.addEventListener("keydown", function(event) {
     // Start new interval to poll for "Skip Ad" button
     intervalID = setInterval(() => {
       const skipButton = document.querySelector("button.ytp-ad-skip-button-modern.ytp-button");
-      console.log("Skip button:", skipButton);
+      //console.log("Skip button:", skipButton);
 
       if (skipButton) {
         skipButton.click();
@@ -26,13 +26,13 @@ document.addEventListener("keydown", function(event) {
         // Reset speed and rewind video after a delay
         setTimeout(() => {
           const newVideo = document.querySelector("video");
-          console.log("New video:", newVideo);
+          //console.log("New video:", newVideo);
 
           if (newVideo) {
             newVideo.playbackRate = 1.0;
             newVideo.currentTime -= 1; // Rewind the video by 100ms*10x = 1s
             speedToggled = false;
-            console.log("Speed reset to:", newVideo.playbackRate, "and time reset to:", newVideo.currentTime);
+            //console.log("Speed reset to:", newVideo.playbackRate, "and time reset to:", newVideo.currentTime);
           }
         }, 100);
 
